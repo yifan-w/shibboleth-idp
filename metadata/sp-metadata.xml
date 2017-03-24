@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" entityID="shibboleth"><md:SPSSODescriptor AuthnRequestsSigned="true" WantAssertionsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol"><md:KeyDescriptor use="encryption"><ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#"><ds:X509Data><ds:X509Certificate>MIICsTCCAhqgAwIBAgIEZc/RcjANBgkqhkiG9w0BAQUFADCBnDEYMBYGA1UEBgwPd3lmX+aWsOen
+n+aItzAzMRgwFgYDVQQIDA93eWZf5paw56ef5oi3MDMxGDAWBgNVBAcMD3d5Zl/mlrDnp5/miLcw
+MzEYMBYGA1UECgwPd3lmX+aWsOenn+aItzAzMRgwFgYDVQQLDA93eWZf5paw56ef5oi3MDMxGDAW
+BgNVBAMMD3d5Zl/mlrDnp5/miLcwMzAeFw0xNzAzMjQxMDU0MTJaFw0xODAzMjQxMDU0MTJaMIGc
+MRgwFgYDVQQGDA93eWZf5paw56ef5oi3MDMxGDAWBgNVBAgMD3d5Zl/mlrDnp5/miLcwMzEYMBYG
+A1UEBwwPd3lmX+aWsOenn+aItzAzMRgwFgYDVQQKDA93eWZf5paw56ef5oi3MDMxGDAWBgNVBAsM
+D3d5Zl/mlrDnp5/miLcwMzEYMBYGA1UEAwwPd3lmX+aWsOenn+aItzAzMIGfMA0GCSqGSIb3DQEB
+AQUAA4GNADCBiQKBgQCoeyntZOk0vh64cf/6VZHwH2NvhzOOFv/o6QZN5/5GlhB2hk7YBHsMiiJG
+GrLJwD6AFXCLnKUtjRU2XbuxJ3VIicLu4LJJoxEc1hqyt9SIU9hzzr4VMXantcgeRmlRgwu01Cl6
+EW0+KATvnS3KDbQCBTFkburF6H9mNEnJ/AD59QIDAQABMA0GCSqGSIb3DQEBBQUAA4GBAHt+qG5K
+ef67fioAfIYhM/E3b1f/ZYrA9jATKlYWzw+1iRLkJNrKY7xe8epRi39S8Y+BGk1kXY2xc9cSBFMI
+nK73RZ8HcZjbgF64gY92OC4B7AE1ywlLIZR0g10p54vtZvMZn8eN6C1o8kbgG9K6aZ0sIw/ub1ir
+mSFEH4Jjl1Mm</ds:X509Certificate></ds:X509Data></ds:KeyInfo></md:KeyDescriptor><md:KeyDescriptor use="signing"><ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#"><ds:X509Data><ds:X509Certificate>MIICsTCCAhqgAwIBAgIEZc/RcjANBgkqhkiG9w0BAQUFADCBnDEYMBYGA1UEBgwPd3lmX+aWsOen
+n+aItzAzMRgwFgYDVQQIDA93eWZf5paw56ef5oi3MDMxGDAWBgNVBAcMD3d5Zl/mlrDnp5/miLcw
+MzEYMBYGA1UECgwPd3lmX+aWsOenn+aItzAzMRgwFgYDVQQLDA93eWZf5paw56ef5oi3MDMxGDAW
+BgNVBAMMD3d5Zl/mlrDnp5/miLcwMzAeFw0xNzAzMjQxMDU0MTJaFw0xODAzMjQxMDU0MTJaMIGc
+MRgwFgYDVQQGDA93eWZf5paw56ef5oi3MDMxGDAWBgNVBAgMD3d5Zl/mlrDnp5/miLcwMzEYMBYG
+A1UEBwwPd3lmX+aWsOenn+aItzAzMRgwFgYDVQQKDA93eWZf5paw56ef5oi3MDMxGDAWBgNVBAsM
+D3d5Zl/mlrDnp5/miLcwMzEYMBYGA1UEAwwPd3lmX+aWsOenn+aItzAzMIGfMA0GCSqGSIb3DQEB
+AQUAA4GNADCBiQKBgQCoeyntZOk0vh64cf/6VZHwH2NvhzOOFv/o6QZN5/5GlhB2hk7YBHsMiiJG
+GrLJwD6AFXCLnKUtjRU2XbuxJ3VIicLu4LJJoxEc1hqyt9SIU9hzzr4VMXantcgeRmlRgwu01Cl6
+EW0+KATvnS3KDbQCBTFkburF6H9mNEnJ/AD59QIDAQABMA0GCSqGSIb3DQEBBQUAA4GBAHt+qG5K
+ef67fioAfIYhM/E3b1f/ZYrA9jATKlYWzw+1iRLkJNrKY7xe8epRi39S8Y+BGk1kXY2xc9cSBFMI
+nK73RZ8HcZjbgF64gY92OC4B7AE1ywlLIZR0g10p54vtZvMZn8eN6C1o8kbgG9K6aZ0sIw/ub1ir
+mSFEH4Jjl1Mm</ds:X509Certificate></ds:X509Data></ds:KeyInfo></md:KeyDescriptor><md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://crm-test.xiaoshouyi.com/ssologin/sp_acfa96c1ce_logout_response.action"/><md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://crm-test.xiaoshouyi.com/ssologin/sp_acfa96c1ce_logout_response.action"/><md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://crm-test.xiaoshouyi.com/mobile/ssologin/sp_acfa96c1ce_logout_response.action"/><md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://crm-test.xiaoshouyi.com/mobile/ssologin/sp_acfa96c1ce_logout_response.action"/><md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat><md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://crm-test.xiaoshouyi.com/ssologin/sp_acfa96c1ce_response.action" index="0" isDefault="true"/><md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://crm-test.xiaoshouyi.com/ssologin/sp_acfa96c1ce_response.action" index="1" isDefault="false"/><md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://crm-test.xiaoshouyi.com/mobile/ssologin/sp_acfa96c1ce_response.action" index="2" isDefault="true"/><md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://crm-test.xiaoshouyi.com/mobile/ssologin/sp_acfa96c1ce_response.action" index="3" isDefault="false"/></md:SPSSODescriptor></md:EntityDescriptor>

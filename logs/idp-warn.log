@@ -1,0 +1,111 @@
+2017-03-24 14:41:38,647 - ERROR [net.shibboleth.ext.spring.error.ErrorRaisingController:55] - Propagating exception thrown by request to /idp/Authn/RemoteUser
+2017-03-24 14:41:38,662 - ERROR [net.shibboleth.idp.authn.ExternalAuthenticationException:76] - 
+net.shibboleth.idp.authn.ExternalAuthenticationException: No conversation key found in request
+	at net.shibboleth.idp.authn.ExternalAuthentication.startExternalAuthentication(ExternalAuthentication.java:137)
+2017-03-24 14:41:52,823 - ERROR [net.shibboleth.ext.spring.error.ErrorRaisingController:55] - Propagating exception thrown by request to /idp/Authn/RemoteUser
+2017-03-24 14:41:52,828 - ERROR [net.shibboleth.idp.authn.ExternalAuthenticationException:76] - 
+net.shibboleth.idp.authn.ExternalAuthenticationException: No conversation key found in request
+	at net.shibboleth.idp.authn.ExternalAuthentication.startExternalAuthentication(ExternalAuthentication.java:137)
+2017-03-24 14:42:03,104 - ERROR [net.shibboleth.ext.spring.error.ErrorRaisingController:55] - Propagating exception thrown by request to /idp/Authn/X509
+2017-03-24 14:42:03,108 - ERROR [net.shibboleth.idp.authn.ExternalAuthenticationException:76] - 
+net.shibboleth.idp.authn.ExternalAuthenticationException: No conversation key found in request
+	at net.shibboleth.idp.authn.ExternalAuthentication.startExternalAuthentication(ExternalAuthentication.java:137)
+2017-03-24 14:42:17,239 - ERROR [net.shibboleth.ext.spring.error.ErrorRaisingController:55] - Propagating exception thrown by request to /idp/Authn/X509
+2017-03-24 14:42:17,244 - ERROR [net.shibboleth.idp.authn.ExternalAuthenticationException:76] - 
+net.shibboleth.idp.authn.ExternalAuthenticationException: No conversation key found in request
+	at net.shibboleth.idp.authn.ExternalAuthentication.startExternalAuthentication(ExternalAuthentication.java:137)
+2017-03-24 15:05:28,880 - ERROR [net.shibboleth.ext.spring.error.ErrorRaisingController:55] - Propagating exception thrown by request to /idp/Authn/X509
+2017-03-24 15:05:28,885 - ERROR [net.shibboleth.idp.authn.ExternalAuthenticationException:76] - 
+net.shibboleth.idp.authn.ExternalAuthenticationException: No conversation key found in request
+	at net.shibboleth.idp.authn.ExternalAuthentication.startExternalAuthentication(ExternalAuthentication.java:137)
+2017-03-24 15:22:09,220 - ERROR [net.shibboleth.ext.spring.error.ErrorRaisingController:55] - Propagating exception thrown by request to /idp/Authn/X509
+2017-03-24 15:22:09,233 - ERROR [net.shibboleth.idp.authn.ExternalAuthenticationException:76] - 
+net.shibboleth.idp.authn.ExternalAuthenticationException: No conversation key found in request
+	at net.shibboleth.idp.authn.ExternalAuthentication.startExternalAuthentication(ExternalAuthentication.java:137)
+2017-03-24 15:22:13,662 - ERROR [net.shibboleth.ext.spring.error.ErrorRaisingController:55] - Propagating exception thrown by request to /idp/Authn/X509
+2017-03-24 15:22:13,668 - ERROR [net.shibboleth.idp.authn.ExternalAuthenticationException:76] - 
+net.shibboleth.idp.authn.ExternalAuthenticationException: No conversation key found in request
+	at net.shibboleth.idp.authn.ExternalAuthentication.startExternalAuthentication(ExternalAuthentication.java:137)
+2017-03-24 19:03:59,688 - ERROR [org.opensaml.saml.metadata.resolver.impl.AbstractReloadingMetadataResolver:294] - Metadata Resolver FilesystemMetadataResolver LocalMetadata: Error occurred while attempting to refresh metadata from '/opt/shibboleth-idp/metadata/my-metadata.xml'
+net.shibboleth.utilities.java.support.resolver.ResolverException: Metadata file '/opt/shibboleth-idp/metadata/my-metadata.xml' does not exist
+	at org.opensaml.saml.metadata.resolver.impl.FilesystemMetadataResolver.validateMetadataFile(FilesystemMetadataResolver.java:142)
+2017-03-24 19:03:59,712 - ERROR [org.opensaml.saml.metadata.resolver.impl.AbstractMetadataResolver:290] - Metadata Resolver FilesystemMetadataResolver LocalMetadata: Metadata provider failed to properly initialize, fail-fast=true, halting
+net.shibboleth.utilities.java.support.component.ComponentInitializationException: Error refreshing metadata during init
+	at org.opensaml.saml.metadata.resolver.impl.AbstractReloadingMetadataResolver.initMetadataResolver(AbstractReloadingMetadataResolver.java:264)
+Caused by: net.shibboleth.utilities.java.support.resolver.ResolverException: net.shibboleth.utilities.java.support.resolver.ResolverException: Metadata file '/opt/shibboleth-idp/metadata/my-metadata.xml' does not exist
+	at org.opensaml.saml.metadata.resolver.impl.AbstractReloadingMetadataResolver.refresh(AbstractReloadingMetadataResolver.java:297)
+Caused by: net.shibboleth.utilities.java.support.resolver.ResolverException: Metadata file '/opt/shibboleth-idp/metadata/my-metadata.xml' does not exist
+	at org.opensaml.saml.metadata.resolver.impl.FilesystemMetadataResolver.validateMetadataFile(FilesystemMetadataResolver.java:142)
+2017-03-24 19:03:59,724 - ERROR [org.springframework.webflow.execution.ActionExecutionException:76] - 
+org.springframework.webflow.execution.ActionExecutionException: Exception thrown executing net.shibboleth.idp.profile.impl.ReloadServiceConfiguration@6ba56c8 in state 'DoProfileWork' of flow 'admin/reload-service' -- action execution attributes were 'map[[empty]]'
+	at org.springframework.webflow.execution.ActionExecutor.execute(ActionExecutor.java:60)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ShibbolethMetadata': Cannot create inner bean '(inner bean)#c03676a' of type [org.opensaml.saml.metadata.resolver.ChainingMetadataResolver] while setting bean property 'embeddedResolver'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#c03676a': Cannot create inner bean '(inner bean)#48dc7834' of type [org.opensaml.saml.metadata.resolver.impl.FilesystemMetadataResolver] while setting bean property 'resolvers' with key [0]; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#48dc7834': Invocation of init method failed; nested exception is net.shibboleth.utilities.java.support.component.ComponentInitializationException: Error refreshing metadata during init
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:313)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#c03676a': Cannot create inner bean '(inner bean)#48dc7834' of type [org.opensaml.saml.metadata.resolver.impl.FilesystemMetadataResolver] while setting bean property 'resolvers' with key [0]; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#48dc7834': Invocation of init method failed; nested exception is net.shibboleth.utilities.java.support.component.ComponentInitializationException: Error refreshing metadata during init
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:313)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#48dc7834': Invocation of init method failed; nested exception is net.shibboleth.utilities.java.support.component.ComponentInitializationException: Error refreshing metadata during init
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1578)
+Caused by: net.shibboleth.utilities.java.support.component.ComponentInitializationException: Error refreshing metadata during init
+	at org.opensaml.saml.metadata.resolver.impl.AbstractReloadingMetadataResolver.initMetadataResolver(AbstractReloadingMetadataResolver.java:264)
+Caused by: net.shibboleth.utilities.java.support.resolver.ResolverException: net.shibboleth.utilities.java.support.resolver.ResolverException: Metadata file '/opt/shibboleth-idp/metadata/my-metadata.xml' does not exist
+	at org.opensaml.saml.metadata.resolver.impl.AbstractReloadingMetadataResolver.refresh(AbstractReloadingMetadataResolver.java:297)
+Caused by: net.shibboleth.utilities.java.support.resolver.ResolverException: Metadata file '/opt/shibboleth-idp/metadata/my-metadata.xml' does not exist
+	at org.opensaml.saml.metadata.resolver.impl.FilesystemMetadataResolver.validateMetadataFile(FilesystemMetadataResolver.java:142)
+2017-03-24 19:08:14,690 - ERROR [org.opensaml.saml.metadata.resolver.impl.AbstractReloadingMetadataResolver:294] - Metadata Resolver FilesystemMetadataResolver LocalMetadata: Error occurred while attempting to refresh metadata from '/opt/shibboleth-idp/metadata/my-metadata.xml'
+net.shibboleth.utilities.java.support.resolver.ResolverException: Metadata file '/opt/shibboleth-idp/metadata/my-metadata.xml' does not exist
+	at org.opensaml.saml.metadata.resolver.impl.FilesystemMetadataResolver.validateMetadataFile(FilesystemMetadataResolver.java:142)
+2017-03-24 19:08:14,695 - ERROR [org.opensaml.saml.metadata.resolver.impl.AbstractMetadataResolver:290] - Metadata Resolver FilesystemMetadataResolver LocalMetadata: Metadata provider failed to properly initialize, fail-fast=true, halting
+net.shibboleth.utilities.java.support.component.ComponentInitializationException: Error refreshing metadata during init
+	at org.opensaml.saml.metadata.resolver.impl.AbstractReloadingMetadataResolver.initMetadataResolver(AbstractReloadingMetadataResolver.java:264)
+Caused by: net.shibboleth.utilities.java.support.resolver.ResolverException: net.shibboleth.utilities.java.support.resolver.ResolverException: Metadata file '/opt/shibboleth-idp/metadata/my-metadata.xml' does not exist
+	at org.opensaml.saml.metadata.resolver.impl.AbstractReloadingMetadataResolver.refresh(AbstractReloadingMetadataResolver.java:297)
+Caused by: net.shibboleth.utilities.java.support.resolver.ResolverException: Metadata file '/opt/shibboleth-idp/metadata/my-metadata.xml' does not exist
+	at org.opensaml.saml.metadata.resolver.impl.FilesystemMetadataResolver.validateMetadataFile(FilesystemMetadataResolver.java:142)
+2017-03-24 19:08:14,698 - ERROR [org.springframework.webflow.execution.ActionExecutionException:76] - 
+org.springframework.webflow.execution.ActionExecutionException: Exception thrown executing net.shibboleth.idp.profile.impl.ReloadServiceConfiguration@3ad71226 in state 'DoProfileWork' of flow 'admin/reload-service' -- action execution attributes were 'map[[empty]]'
+	at org.springframework.webflow.execution.ActionExecutor.execute(ActionExecutor.java:60)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ShibbolethMetadata': Cannot create inner bean '(inner bean)#2aa9b932' of type [org.opensaml.saml.metadata.resolver.ChainingMetadataResolver] while setting bean property 'embeddedResolver'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#2aa9b932': Cannot create inner bean '(inner bean)#6cbd977f' of type [org.opensaml.saml.metadata.resolver.impl.FilesystemMetadataResolver] while setting bean property 'resolvers' with key [0]; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#6cbd977f': Invocation of init method failed; nested exception is net.shibboleth.utilities.java.support.component.ComponentInitializationException: Error refreshing metadata during init
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:313)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#2aa9b932': Cannot create inner bean '(inner bean)#6cbd977f' of type [org.opensaml.saml.metadata.resolver.impl.FilesystemMetadataResolver] while setting bean property 'resolvers' with key [0]; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#6cbd977f': Invocation of init method failed; nested exception is net.shibboleth.utilities.java.support.component.ComponentInitializationException: Error refreshing metadata during init
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:313)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#6cbd977f': Invocation of init method failed; nested exception is net.shibboleth.utilities.java.support.component.ComponentInitializationException: Error refreshing metadata during init
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1578)
+Caused by: net.shibboleth.utilities.java.support.component.ComponentInitializationException: Error refreshing metadata during init
+	at org.opensaml.saml.metadata.resolver.impl.AbstractReloadingMetadataResolver.initMetadataResolver(AbstractReloadingMetadataResolver.java:264)
+Caused by: net.shibboleth.utilities.java.support.resolver.ResolverException: net.shibboleth.utilities.java.support.resolver.ResolverException: Metadata file '/opt/shibboleth-idp/metadata/my-metadata.xml' does not exist
+	at org.opensaml.saml.metadata.resolver.impl.AbstractReloadingMetadataResolver.refresh(AbstractReloadingMetadataResolver.java:297)
+Caused by: net.shibboleth.utilities.java.support.resolver.ResolverException: Metadata file '/opt/shibboleth-idp/metadata/my-metadata.xml' does not exist
+	at org.opensaml.saml.metadata.resolver.impl.FilesystemMetadataResolver.validateMetadataFile(FilesystemMetadataResolver.java:142)
+2017-03-24 19:14:04,390 - ERROR [org.opensaml.saml.metadata.resolver.impl.AbstractReloadingMetadataResolver:294] - Metadata Resolver FilesystemMetadataResolver LocalMetadata: Error occurred while attempting to refresh metadata from '/opt/shibboleth-idp/metadata/my-metadata.xml'
+net.shibboleth.utilities.java.support.resolver.ResolverException: Metadata file '/opt/shibboleth-idp/metadata/my-metadata.xml' does not exist
+	at org.opensaml.saml.metadata.resolver.impl.FilesystemMetadataResolver.validateMetadataFile(FilesystemMetadataResolver.java:142)
+2017-03-24 19:14:04,394 - ERROR [org.opensaml.saml.metadata.resolver.impl.AbstractMetadataResolver:290] - Metadata Resolver FilesystemMetadataResolver LocalMetadata: Metadata provider failed to properly initialize, fail-fast=true, halting
+net.shibboleth.utilities.java.support.component.ComponentInitializationException: Error refreshing metadata during init
+	at org.opensaml.saml.metadata.resolver.impl.AbstractReloadingMetadataResolver.initMetadataResolver(AbstractReloadingMetadataResolver.java:264)
+Caused by: net.shibboleth.utilities.java.support.resolver.ResolverException: net.shibboleth.utilities.java.support.resolver.ResolverException: Metadata file '/opt/shibboleth-idp/metadata/my-metadata.xml' does not exist
+	at org.opensaml.saml.metadata.resolver.impl.AbstractReloadingMetadataResolver.refresh(AbstractReloadingMetadataResolver.java:297)
+Caused by: net.shibboleth.utilities.java.support.resolver.ResolverException: Metadata file '/opt/shibboleth-idp/metadata/my-metadata.xml' does not exist
+	at org.opensaml.saml.metadata.resolver.impl.FilesystemMetadataResolver.validateMetadataFile(FilesystemMetadataResolver.java:142)
+2017-03-24 19:14:04,404 - ERROR [org.springframework.webflow.execution.ActionExecutionException:76] - 
+org.springframework.webflow.execution.ActionExecutionException: Exception thrown executing net.shibboleth.idp.profile.impl.ReloadServiceConfiguration@1d9fa894 in state 'DoProfileWork' of flow 'admin/reload-service' -- action execution attributes were 'map[[empty]]'
+	at org.springframework.webflow.execution.ActionExecutor.execute(ActionExecutor.java:60)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ShibbolethMetadata': Cannot create inner bean '(inner bean)#3666ac53' of type [org.opensaml.saml.metadata.resolver.ChainingMetadataResolver] while setting bean property 'embeddedResolver'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#3666ac53': Cannot create inner bean '(inner bean)#113fe7da' of type [org.opensaml.saml.metadata.resolver.impl.FilesystemMetadataResolver] while setting bean property 'resolvers' with key [0]; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#113fe7da': Invocation of init method failed; nested exception is net.shibboleth.utilities.java.support.component.ComponentInitializationException: Error refreshing metadata during init
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:313)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#3666ac53': Cannot create inner bean '(inner bean)#113fe7da' of type [org.opensaml.saml.metadata.resolver.impl.FilesystemMetadataResolver] while setting bean property 'resolvers' with key [0]; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#113fe7da': Invocation of init method failed; nested exception is net.shibboleth.utilities.java.support.component.ComponentInitializationException: Error refreshing metadata during init
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:313)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#113fe7da': Invocation of init method failed; nested exception is net.shibboleth.utilities.java.support.component.ComponentInitializationException: Error refreshing metadata during init
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1578)
+Caused by: net.shibboleth.utilities.java.support.component.ComponentInitializationException: Error refreshing metadata during init
+	at org.opensaml.saml.metadata.resolver.impl.AbstractReloadingMetadataResolver.initMetadataResolver(AbstractReloadingMetadataResolver.java:264)
+Caused by: net.shibboleth.utilities.java.support.resolver.ResolverException: net.shibboleth.utilities.java.support.resolver.ResolverException: Metadata file '/opt/shibboleth-idp/metadata/my-metadata.xml' does not exist
+	at org.opensaml.saml.metadata.resolver.impl.AbstractReloadingMetadataResolver.refresh(AbstractReloadingMetadataResolver.java:297)
+Caused by: net.shibboleth.utilities.java.support.resolver.ResolverException: Metadata file '/opt/shibboleth-idp/metadata/my-metadata.xml' does not exist
+	at org.opensaml.saml.metadata.resolver.impl.FilesystemMetadataResolver.validateMetadataFile(FilesystemMetadataResolver.java:142)
+2017-03-24 19:17:24,069 - ERROR [org.opensaml.profile.action.impl.DecodeMessage:73] - Profile Action DecodeMessage: Unable to decode incoming request
+org.opensaml.messaging.decoder.MessageDecodingException: This message decoder only supports the HTTP POST method
+	at org.opensaml.saml.saml2.binding.decoding.impl.HTTPPostDecoder.doDecode(HTTPPostDecoder.java:82)
+2017-03-24 19:17:24,082 - WARN [org.opensaml.profile.action.impl.LogEvent:105] - A non-proceed event occurred while processing the request: UnableToDecode
+2017-03-24 19:17:37,604 - ERROR [org.opensaml.profile.action.impl.DecodeMessage:73] - Profile Action DecodeMessage: Unable to decode incoming request
+org.opensaml.messaging.decoder.MessageDecodingException: This message decoder only supports the HTTP POST method
+	at org.opensaml.saml.saml2.binding.decoding.impl.HTTPPostDecoder.doDecode(HTTPPostDecoder.java:82)
+2017-03-24 19:17:37,612 - WARN [org.opensaml.profile.action.impl.LogEvent:105] - A non-proceed event occurred while processing the request: UnableToDecode
